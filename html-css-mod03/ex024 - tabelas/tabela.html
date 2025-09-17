@@ -7,11 +7,18 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(248, 255, 207);
+            background-color: white;
         }
         
         h1 {
             color: black;
+        }
+
+        caption {
+            font-size: 1.5em;
+            background-color: lightgrey;
+            font-weight: bold;
+            padding: 10px;
         }
         
         table {
@@ -25,8 +32,12 @@
         }
         
         thead, tfoot {
-            background-color: rgb(221, 221, 221);
+            background-color: lightgrey;
             color: black;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
         }
 
         .num {
@@ -38,6 +49,7 @@
     <h1>Uso de tabelas grandes</h1>    
     <div id="conteiner-tabela">
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
                     <th scope="col">Estado</th>
